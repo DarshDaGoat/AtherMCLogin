@@ -1,0 +1,35 @@
+# AtherMCAuth configuration
+# Passwords are stored as PBKDF2-HMAC-SHA256 hashes with unique random salts.
+# Never change the password hashing settings after accounts have been created.
+settings:
+  login-timeout-seconds: 60
+  max-login-attempts: 3
+  reminder-interval-seconds: 10
+  minimum-password-length: 8
+  maximum-password-length: 64
+  pbkdf2-iterations: 210000
+  require-registration: true
+
+messages:
+  prefix: "&cATHERMC &7» "
+  join-login: "&fPlease login using &a/login <password>&f. You have &c%attempts%&f attempts."
+  join-register: "&fPlease register using &a/register <password> <confirmPassword>&f."
+  already-logged-in: "&cYou are already logged in."
+  not-registered: "&cYou do not have an account. Use &a/register <password> <confirmPassword>&c."
+  already-registered: "&cYou already have an account. Use &a/login <password>&c."
+  login-success: "&aYou are now logged in!"
+  login-failed: "&cIncorrect password. Attempts remaining: &e%attempts%"
+  too-many-attempts: "&cToo many failed attempts."
+  register-success: "&aAccount created! You are now logged in."
+  password-mismatch: "&cThe passwords do not match."
+  password-too-short: "&cYour password must be at least %min% characters."
+  password-too-long: "&cYour password cannot exceed %max% characters."
+  login-usage: "&cUsage: /login <password>"
+  register-usage: "&cUsage: /register <password> <confirmPassword>"
+  timeout: "&cYou took too long to log in."
+  must-login: "&cYou must log in first."
+  reminder: "&fRemember to log in using &a/login <password>&f."
+  reload: "&aAtherMCAuth configuration reloaded."
+  only-player: "&cOnly players can use this command."
+  hashing-error: "&cSomething went wrong. Please try again."
+  actionbar: "&cLogin required &7| &fTime left: &e%seconds%s"

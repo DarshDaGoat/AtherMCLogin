@@ -1,0 +1,19 @@
+name: AtherMCAuth
+version: 1.0.0
+main: com.athermc.auth.AtherMCAuth
+api-version: '1.21'
+author: AtherMC
+description: AtherMC registration and login system
+commands:
+  login:
+    description: Log in to your AtherMC account
+    usage: /login <password>
+    aliases: [l]
+  register:
+    description: Register an AtherMC account
+    usage: /register <password> <confirmPassword>
+    aliases: [reg]
+permissions:
+  athermcauth.admin:
+    description: Allows staff to reload AtherMCAuth configuration
+    default: op
